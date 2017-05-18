@@ -38,6 +38,13 @@ void Display::SetLeds(byte expander, byte leds) {
   Display::leds[expander] = leds;
 }
 
+void Display::TurnLeds(byte expander, byte leds, LedState state) {
+  if (state == ON)
+    Display::leds[expander] |= leds;
+  else
+    Display::leds[expander] &= ~leds;
+}
+
 LedState Display::GetLed(byte led) {
   int expander = led > 6 ? 1 : 0;
   return (Display::leds[expander] & (1 << Display::remap[expander][led]));

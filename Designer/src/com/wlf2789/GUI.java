@@ -3,7 +3,8 @@ package com.wlf2789;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.geom.Point2D;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Rectangle2D;
 import java.io.File;
 
 public class GUI extends JFrame {
@@ -13,11 +14,15 @@ public class GUI extends JFrame {
     private JButton bPreviewData;
     private JButton bSave;
     private JPanel renderPanel;
-    public JComboBox exportOptions;
-    public JCheckBox userFriendly;
     private JButton bPreviewImage;
     private JComboBox cbDisplay;
+    private JList<Integer> lFrames;
+    private JButton bAddU;
+    private JButton bDel;
     private Output output;
+    public JComboBox exportOptions;
+    public JCheckBox compact;
+    private JButton bAddD;
 
     // constants
     public static final int    tileSize  = 15;
@@ -28,7 +33,7 @@ public class GUI extends JFrame {
     public int renderWidth;
     public int renderHeight;
     public double   zoom              = 1.0;
-    public Point    renderTranslation = new Point((int)(-Main.maxItems / 4 * tileSize), (int)(-9 * tileSize));
+    public Point    renderTranslation = new Point(0, 0);
 
     public GUI() {
         setTitle("POVD Animator");
@@ -40,7 +45,8 @@ public class GUI extends JFrame {
         createUIComponents();
 
         Rectangle bounds = getBounds();
-        bounds.height = tileSize * 15 + 70;
+        bounds.width = 800;
+        bounds.height = 300;
         setBounds(bounds);
         setMinimumSize(new Dimension(bounds.width, bounds.height));
 
@@ -53,6 +59,7 @@ public class GUI extends JFrame {
             fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
             if (fileChooser.showOpenDialog(GUI.this) == JFileChooser.APPROVE_OPTION)
                 Main.loadData(fileChooser.getSelectedFile());
+            updateFramesList();
         });
 
         bSave.addActionListener(e -> {
@@ -62,17 +69,50 @@ public class GUI extends JFrame {
                 Main.saveData(fileChooser.getSelectedFile());
         });
 
-        addComponentListener(new ComponentAdapter() {
-            @Override public void componentResized(ComponentEvent componentEvent) {
-                renderWidth = renderPanel.getWidth();
-                renderHeight = renderPanel.getHeight();
+        bAddU.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (i < 0)
+                i = 0;
+            Main.addFrame(i);
+            updateFramesList();
+            lFrames.setSelectedIndex(i);
+        });
+
+        bAddD.addActionListener(e -> {
+            int i = getSelectedFrame()+1;
+            if (i < 0)
+                i = 0;
+            Main.addFrame(i);
+            updateFramesList();
+            lFrames.setSelectedIndex(i);
+        });
+
+        bDel.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (i >= 0) {
+                Main.delFrame(lFrames.getSelectedIndex());
+                updateFramesList();
+                lFrames.setSelectedIndex(i >= lFrames.getModel().getSize() ? i - 1 : i);
             }
         });
 
         setVisible(true);
         output = new Output(this);
 
-        Main.loadData(new File("/home/wlf/Arduino/Projects/POVDisplay/povd/animation.h"));
+        Main.loadData(new File("/home/wlf/Coding/INZYNIERKA/POVDisplay/Arduino/animation.h"));
+        updateFramesList();
+    }
+
+    public void updateFramesList() {
+        DefaultListModel<Integer> model = (DefaultListModel)lFrames.getModel();
+        model.clear();
+        for(int index : Main.instance().data.keySet())
+            model.addElement(index);
+        lFrames.setModel(model);
+    }
+
+    public int getSelectedFrame() {
+        return lFrames.getSelectedIndex();
     }
 
     private void createUIComponents() {
@@ -90,18 +130,20 @@ public class GUI extends JFrame {
             }
 
             @Override protected void paintComponent(Graphics g) {
+                renderWidth = getWidth();
+                renderHeight = getHeight();
+
                 Graphics2D g2 = (Graphics2D)g;
 
                 g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
                 g2.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
 
                 g2.setColor(Color.WHITE);
-                g2.fill(getBounds());
+                g2.fill(new Rectangle2D.Double(0, 0, renderWidth, renderHeight));
 
+                AffineTransform savedTransform = g2.getTransform();
                 g2.translate((renderWidth / 2), (renderHeight / 2));
-                g2.translate(-renderTranslation.getX(), -renderTranslation.getY());
-//                g2.scale(zoom, zoom);
-
+                g2.translate(renderTranslation.getX(), renderTranslation.getY());
 
                 if (previewImageMode) {
                     if (cbDisplay.getSelectedItem() == "Straight") {
@@ -109,7 +151,7 @@ public class GUI extends JFrame {
                         for (int x = 0; x < Main.maxItems; x++)
                             for (int y = 0; y < 14; y++) {
                                 g2.setColor((y == 0 ? Color.GREEN : Color.RED));
-                                if (Main.getLed(x, y))
+                                if (Main.getLed(getSelectedFrame(), x, y))
                                     g2.fillOval(x*4, y*4, 4,4);
                             }
                     } else {
@@ -118,7 +160,7 @@ public class GUI extends JFrame {
                             for (int y = 0; y < 14; y++) {
                                 g2.setColor((y == 0 ? Color.GREEN : Color.RED));
                                 p = getPointAround(0, 30 + (14 - y) * tileSize, 0, 0, x * itemAngle);
-                                if (Main.getLed(x, y))
+                                if (Main.getLed(getSelectedFrame(), x, y))
                                     g2.fillOval(p.x, p.y, tileSize,tileSize);
                             }
                     }
@@ -134,7 +176,7 @@ public class GUI extends JFrame {
                             g2.drawString(String.format("%3s", (x + 1)), (int)(x * size + 1 * zoom), -(int)(size * 0.4));
                             for (int y = 0; y < 14; y++) {
                                 g2.setColor((y == 0 ? Color.GREEN : Color.RED));
-                                if (Main.getLed(x, y))
+                                if (Main.getLed(getSelectedFrame(), x, y))
                                     g2.fillOval(x*size, y*size, size, size);
                                 else
                                     g2.drawOval(x*size, y*size, size, size);
@@ -151,7 +193,7 @@ public class GUI extends JFrame {
                             for (int y = 0; y < 14; y++) {
                                 p = getPointAround(0, (int)((19 - y) * zoom * size), 0, 0, x * itemAngle);
                                 g2.setColor((y == 0 ? Color.GREEN : Color.RED));
-                                if (Main.getLed(x, y))
+                                if (Main.getLed(getSelectedFrame(), x, y))
                                     g2.fillOval(p.x, p.y, size, size);
                                 else
                                     g2.drawOval(p.x, p.y, size, size);
@@ -159,6 +201,11 @@ public class GUI extends JFrame {
                         }
                     }
                 }
+
+                // render border
+                g2.setTransform(savedTransform);
+                g2.setColor(Color.BLACK);
+                g2.drawRect(0, 0, renderWidth-1, renderHeight-1);
                 repaint();
             }
         };
@@ -184,25 +231,26 @@ public class GUI extends JFrame {
                     int size = (int)(tileSize * zoom);
                     int x, y;
                     if (cbDisplay.getSelectedItem() == "Straight") {
-                        x = -(int)(( renderWidth / 2) - renderTranslation.getX() - e.getX() - (Main.maxItems / 2 * size)) / size;
-                        y = -(int)((renderHeight / 2) - renderTranslation.getY() - e.getY() - (7.5 * size)) / size;
+                        x = -(int)(( renderWidth / 2) + renderTranslation.getX() - e.getX() - (Main.maxItems / 2 * size)) / size;
+                        y = -(int)((renderHeight / 2) + renderTranslation.getY() - e.getY() - (7.5 * size)) / size;
                     } else {
-                        x = -(int)(( renderWidth / 2) - renderTranslation.getX() - e.getX());
-                        y = -(int)((renderHeight / 2) - renderTranslation.getY() - e.getY());
-                        y = (int)Math.sqrt( Math.pow(x, 2) + Math.pow(y, 2) ) / size;
-                        System.out.printf("x,y: %d,%d\n", x, y);
+                        x = Math.abs((int)(( renderWidth / 2) + renderTranslation.getX() - e.getX()));
+                        y = Math.abs((int)((renderHeight / 2) + renderTranslation.getY() - e.getY()));
+                        System.out.printf("--- START\ne x,y: %d,%d\no x,y: %d,%d\n", e.getX(),e.getY(), x,y);
+                        y = (int)Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)) / size;
+                        System.out.printf("o   y: %d\n", y);
                     }
 
                     switch (button) {
                         // set LED
                         case MouseEvent.BUTTON1:
-                            Main.setLed(x, y, true);
+                            Main.setLed(getSelectedFrame(), x, y, true);
                             break;
                         case MouseEvent.BUTTON3:
                             if ((e.getModifiersEx() & MouseEvent.CTRL_DOWN_MASK) != 0)
-                                Main.clearDataAt(x);
+                                Main.clearDataAt(getSelectedFrame(), x);
                             else
-                                Main.setLed(x, y, false);
+                                Main.setLed(getSelectedFrame(), x, y, false);
                             break;
                     }
                 }
@@ -214,8 +262,8 @@ public class GUI extends JFrame {
                             break;
                         case 2:
                             renderTranslation.move(
-                                    (int)(renderTranslation.getX() + (oldPos.getX() - e.getX())),
-                                    (int)(renderTranslation.getY() + (oldPos.getY() - e.getY()))
+                                    (int)(renderTranslation.getX() + (e.getX() - oldPos.getX())),
+                                    (int)(renderTranslation.getY() + (e.getY() - oldPos.getY()))
                             );
                             oldPos = e.getPoint();
                             break;

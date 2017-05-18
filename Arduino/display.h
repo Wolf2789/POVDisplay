@@ -1,6 +1,8 @@
 #ifndef _DISPLAY_H
 #define _DISPLAY_H
 
+#define randomTime(min, max) ((rand()%(int)(((max) + 1)-(min)))+ (min)) 
+
 enum LedState {
   OFF = 0,
   ON = 1
@@ -23,6 +25,7 @@ class Display {
     static void SetLed(byte expander, byte led, LedState state);
     static void SetLed(byte led, LedState state);
     static void SetLeds(byte expander, byte leds);
+    static void TurnLeds(byte epander, byte leds, LedState state);
     static LedState GetLed(byte led);
 };
 
