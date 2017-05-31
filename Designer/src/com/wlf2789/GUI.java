@@ -23,6 +23,16 @@ public class GUI extends JFrame {
     public JComboBox exportOptions;
     public JCheckBox compact;
     private JButton bAddD;
+    private JButton bCloneU;
+    private JButton bCloneD;
+    private JTextField tfAdd;
+    private JTextField tfClone;
+    private JButton bMoveU;
+    private JButton bMoveD;
+    private JButton bScrollL;
+    private JButton bScrollR;
+    private JTextField tfMove;
+    private JTextField tfScroll;
 
     // constants
     public static final int    tileSize  = 15;
@@ -50,7 +60,10 @@ public class GUI extends JFrame {
         setBounds(bounds);
         setMinimumSize(new Dimension(bounds.width, bounds.height));
 
-        bNew.addActionListener(e -> Main.clearData());
+        bNew.addActionListener(e -> {
+            Main.clearData();
+            updateFramesList();
+        });
         bPreviewData.addActionListener(e -> output.show(Main.dataExport()));
         bPreviewImage.addActionListener(e -> previewImageMode = !previewImageMode);
 
@@ -87,6 +100,56 @@ public class GUI extends JFrame {
             lFrames.setSelectedIndex(i);
         });
 
+        bCloneU.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (i >= 0) {
+                Main.duplicateFrame(i);
+                updateFramesList();
+                lFrames.setSelectedIndex(i);
+            }
+        });
+
+        bCloneD.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (i >= 0) {
+                Main.duplicateFrame(i);
+                updateFramesList();
+                lFrames.setSelectedIndex(i + 1);
+            }
+        });
+
+        bMoveU.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (i > 0) {
+                i -= 1;
+                Main.swapFrames(i+1, i);
+                updateFramesList();
+                lFrames.setSelectedIndex(i);
+            }
+        });
+
+        bMoveD.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (i < Main.getFramesCount() - 1) {
+                i += 1;
+                Main.swapFrames(i-1, i);
+                updateFramesList();
+                lFrames.setSelectedIndex(i);
+            }
+        });
+
+        bScrollL.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (Main.instance().data.containsKey(i))
+                Main.scrollFrame(i, -1);
+        });
+
+        bScrollR.addActionListener(e -> {
+            int i = getSelectedFrame();
+            if (Main.instance().data.containsKey(i))
+                Main.scrollFrame(i, +1);
+        });
+
         bDel.addActionListener(e -> {
             int i = getSelectedFrame();
             if (i >= 0) {
@@ -99,8 +162,11 @@ public class GUI extends JFrame {
         setVisible(true);
         output = new Output(this);
 
+        /*
         Main.loadData(new File("/home/wlf/Coding/INZYNIERKA/POVDisplay/Arduino/animation.h"));
         updateFramesList();
+        lFrames.setSelectedIndex(0);
+        */
     }
 
     public void updateFramesList() {
@@ -129,6 +195,8 @@ public class GUI extends JFrame {
                 );
             }
 
+            int currentRenderedFrame = 0;
+
             @Override protected void paintComponent(Graphics g) {
                 renderWidth = getWidth();
                 renderHeight = getHeight();
@@ -151,7 +219,7 @@ public class GUI extends JFrame {
                         for (int x = 0; x < Main.maxItems; x++)
                             for (int y = 0; y < 14; y++) {
                                 g2.setColor((y == 0 ? Color.GREEN : Color.RED));
-                                if (Main.getLed(getSelectedFrame(), x, y))
+                                if (Main.getLed(currentRenderedFrame, x, y))
                                     g2.fillOval(x*4, y*4, 4,4);
                             }
                     } else {
@@ -160,10 +228,11 @@ public class GUI extends JFrame {
                             for (int y = 0; y < 14; y++) {
                                 g2.setColor((y == 0 ? Color.GREEN : Color.RED));
                                 p = getPointAround(0, 30 + (14 - y) * tileSize, 0, 0, x * itemAngle);
-                                if (Main.getLed(getSelectedFrame(), x, y))
+                                if (Main.getLed(currentRenderedFrame, x, y))
                                     g2.fillOval(p.x, p.y, tileSize,tileSize);
                             }
                     }
+                    currentRenderedFrame = (currentRenderedFrame + 1) % Main.getFramesCount();
                 } else {
                     g2.setFont(g2.getFont().deriveFont((float)(7 * zoom)));
                     int size = (int)(tileSize * zoom);

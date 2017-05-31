@@ -48,7 +48,7 @@ public class Main extends JFrame {
     }
 
     public String data2string() {
-        String result = "#define MAX_FRAMES "+ data.size() +"\n#define MAX_STEPS "+ maxItems +"\nbyte animation[][MAX_STEPS][2] {";
+        String result = "#define MAX_FRAMES "+ data.size() +"\n#define MAX_STEPS "+ maxItems +"\nextern Display;\nbyte animation[][MAX_STEPS][2] {";
 
         String toInsert;
         switch ((String)gui.exportOptions.getSelectedItem()) {
@@ -86,7 +86,7 @@ public class Main extends JFrame {
             }
             result += "}" + (f < (data.size() - 1) ? "," : "");
         }
-        return result + "};";
+        return result + "};\nvoid doAnimation(int frame, int step) {\n  Display::SetLeds(0, animation[frame][step][0];\n  Display::SetLeds(1, animation[frame][step][1];\n}";
     }
 
 
@@ -190,9 +190,18 @@ public class Main extends JFrame {
 
 
     public static void addFrame(int index) {
+        if (getFramesCount() > 10) return;
         for (int i = instance().data.size(); i > index; i--)
             instance().data.put(i, instance().data.get(i - 1));
         instance().data.put(index, new HashMap<>());
+        instance().data.get(index).put(0,"0000000000000000");
+    }
+
+    public static void duplicateFrame(int index) {
+        if (getFramesCount() > 10) return;
+        for (int i = instance().data.size(); i > index; i--)
+            instance().data.put(i, instance().data.get(i - 1));
+        instance().data.put(index + 1, new HashMap<>(instance().data.get(index)));
     }
 
     public static void delFrame(int index) {
@@ -201,6 +210,60 @@ public class Main extends JFrame {
                 instance().data.put(i, instance().data.get(i + 1));
             instance().data.remove(instance().data.size() - 1);
         }
+    }
+
+    public static void swapFrames(int index1, int index2) {
+        if (
+            (index1 == index2) ||
+            (index1 < 0) || (index1 >= instance().data.size()) ||
+            (index2 < 0) || (index2 >= instance().data.size()) ||
+            (!instance().data.containsKey(index1)) ||
+            (!instance().data.containsKey(index2))
+        ) return;
+        HashMap<Integer, String> toSwap = instance().data.get(index1);
+        instance().data.put(index1, instance().data.get(index2));
+        instance().data.put(index2, toSwap);
+    }
+
+    public static void scrollFrame(int frame, int step) {
+        if (!instance().data.containsKey(frame)) return;
+        HashMap<Integer, String> frameToEdit = instance().data.get(frame);
+
+        String backup = "";
+        if (step < 0) {
+            // backup first frame step
+            for (int i : frameToEdit.keySet()) {
+                backup = frameToEdit.get(i);
+                break;
+            }
+
+            String current = backup;
+            for (int i = 1; i < frameToEdit.size(); i++) {
+                if (frameToEdit.containsKey(i))
+                    current = frameToEdit.get(i);
+                frameToEdit.put(i - 1, current);
+            }
+            frameToEdit.put(frameToEdit.size() - 1, backup);
+        } else if (step > 0) {
+            // backup last frame step
+            for (int i : frameToEdit.keySet())
+                backup = frameToEdit.get(i);
+
+            String current = backup;
+            for (int i = frameToEdit.size() - 2; i >= 0; i--) {
+                if (frameToEdit.containsKey(i))
+                    current = frameToEdit.get(i);
+                frameToEdit.put(i + 1, current);
+            }
+            frameToEdit.put(0, backup);
+        }
+
+        if (step < -1 || step > 1)
+            scrollFrame(frame, (step < 0 ? step + 1 : step - 1));
+    }
+
+    public static int getFramesCount() {
+        return instance().data.size();
     }
 
 
