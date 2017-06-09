@@ -1,0 +1,4 @@
+#define MAX_STEPS {ANIMATION STEPS}
+byte image[][2] {
+{ANIMATION DATA}
+};

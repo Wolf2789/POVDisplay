@@ -44,7 +44,7 @@
         </constraints>
         <properties>
           <horizontalTextPosition value="11"/>
-          <icon value="save.png"/>
+          <icon value="image/save.png"/>
           <text value="Save"/>
           <toolTipText value="Save project"/>
           <verticalTextPosition value="0"/>

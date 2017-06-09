@@ -1,0 +1,18 @@
+  iText = (step - (MAX_STEPS + textLenWidth - position));
+  iChar = iText % 6;
+  iText /= 6;
+
+  Display::SetLEDs(0, 0);
+  Display::SetLEDs(1, 0);
+
+  if (iText >= 0 && iText < textLen && iChar >= 0 && iChar < 5)
+    if (textToDisplay[iText] != 32) {
+      Display::SetLEDs(0, FONT[ FONT_MAPPING[textToDisplay[iText]] ][iChar][0]);
+      Display::SetLEDs(1, FONT[ FONT_MAPPING[textToDisplay[iText]] ][iChar][1]);
+    }
+
+  if (ANIMATION_OUTLINE)
+    Display::TurnLEDs(0, 8, ON);
+
+  if ((positionCountdown = (positionCountdown + 1) % ANIMATION_SPEED) == 0)
+    position = (position + 1) % (MAX_STEPS + textLenWidth * 2);

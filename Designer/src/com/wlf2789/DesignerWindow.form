@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.wlf2789.DesignerWindow">
+  <grid id="27dc6" binding="designerRoot" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="388" height="294"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="1f6cb" binding="renderPanel" custom-create="true" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="9dd7" binding="designerConfigPanel" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e0829" class="javax.swing.JSpinner" binding="designerSteps">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="7e3d4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Maximum number of steps"/>
+            </properties>
+          </component>
+          <component id="5e27a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <text value="Move image"/>
+            </properties>
+          </component>
+          <component id="ca484" class="javax.swing.JButton" binding="bLeft">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.25" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="←"/>
+            </properties>
+          </component>
+          <component id="357a5" class="javax.swing.JButton" binding="bRight">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.25" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="→"/>
+            </properties>
+          </component>
+          <component id="8e9df" class="javax.swing.JButton" binding="bUp">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.25" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="↑"/>
+            </properties>
+          </component>
+          <component id="bbb16" class="javax.swing.JButton" binding="bDown">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.25" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="↓"/>
+            </properties>
+          </component>
+          <component id="aeb7f" class="javax.swing.JButton" binding="bPreview">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Preview Display Effect"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

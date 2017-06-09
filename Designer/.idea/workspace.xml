@@ -5,6 +5,9 @@
       <artifact name="POVD Designer:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/com/wlf2789/MainWindow.java" line="135" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8122903f-befb-4da7-a1ba-1d5e2447be82" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,13 +24,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wlf2789/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="196" column="57" lean-forward="false" selection-start-line="196" selection-start-column="57" selection-end-line="196" selection-end-column="57" />
+            <state relative-caret-position="304">
+              <caret line="159" column="11" lean-forward="true" selection-start-line="159" selection-start-column="11" selection-end-line="159" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wlf2789/DataHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DesignerWindow.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wlf2789/DesignerWindow.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DesignerWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/wlf2789/DesignerWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="216" column="51" lean-forward="true" selection-start-line="216" selection-start-column="51" selection-end-line="216" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wlf2789/MainWindow.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -37,6 +90,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,6 +99,7 @@
       <find>u</find>
       <find>POVD_Designer</find>
       <find>untitled</find>
+      <find>style</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/.idea</dir>
@@ -65,21 +120,51 @@
         <option value="$PROJECT_DIR$/src/com/wlf2789/MainBackup.java" />
         <option value="$PROJECT_DIR$/src/com/wlf2789/notatki" />
         <option value="$PROJECT_DIR$/src/com/wlf2789/Output.java" />
-        <option value="$PROJECT_DIR$/.idea/description.html" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/wlf2789/a" />
         <option value="$PROJECT_DIR$/../../../BACKUP/POVD Designer/test/animation.h" />
         <option value="$USER_HOME$/test.h" />
         <option value="$PROJECT_DIR$/src/com/wlf2789/GUI.form" />
         <option value="$PROJECT_DIR$/src/com/wlf2789/GUI.java" />
+        <option value="$PROJECT_DIR$/Templates/body" />
+        <option value="$PROJECT_DIR$/Templates/header" />
+        <option value="$PROJECT_DIR$/Templates/about" />
+        <option value="$PROJECT_DIR$/Templates/about.properties" />
+        <option value="$PROJECT_DIR$/.idea/description.html" />
+        <option value="$PROJECT_DIR$/resources/header" />
+        <option value="$PROJECT_DIR$/resources/body" />
+        <option value="$PROJECT_DIR$/resources/animation/text" />
+        <option value="$PROJECT_DIR$/resources/backup/body/end" />
+        <option value="$PROJECT_DIR$/resources/header/animation/text" />
+        <option value="$PROJECT_DIR$/resources/body/animation/text" />
+        <option value="$PROJECT_DIR$/resources/backup/body/animation/video" />
+        <option value="$PROJECT_DIR$/resources/body/animation/image" />
+        <option value="$PROJECT_DIR$/resources/body/end" />
+        <option value="$PROJECT_DIR$/resources/body/animation/video" />
+        <option value="$PROJECT_DIR$/resources/backup/CODE" />
+        <option value="$PROJECT_DIR$/resources/backup/body/animation/image" />
+        <option value="$PROJECT_DIR$/resources/backup/header/animation/image" />
+        <option value="$PROJECT_DIR$/resources/backup/header/animation/text" />
+        <option value="$PROJECT_DIR$/resources/backup/body/animation/text" />
+        <option value="$PROJECT_DIR$/resources/animation/text/code" />
+        <option value="$PROJECT_DIR$/resources/animation/image/setup" />
         <option value="$PROJECT_DIR$/src/com/wlf2789/Main.java" />
+        <option value="$PROJECT_DIR$/resources/animation/image/code" />
+        <option value="$PROJECT_DIR$/resources/code" />
+        <option value="$PROJECT_DIR$/resources/animation/text/setup" />
+        <option value="$PROJECT_DIR$/src/com/wlf2789/DesignerWindow.form" />
+        <option value="$PROJECT_DIR$/resources/about.html" />
+        <option value="$PROJECT_DIR$/src/com/wlf2789/DataHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/wlf2789/MainWindow.form" />
+        <option value="$PROJECT_DIR$/src/com/wlf2789/DesignerWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/wlf2789/MainWindow.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="y" value="26" />
+    <option name="width" value="1920" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -96,7 +181,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Designer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Designer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Designer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/wlf2789">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Designer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="image">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -122,10 +268,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -143,6 +285,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="wlf2789" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainWindow" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -167,14 +313,106 @@
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wlf2789" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Designer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
@@ -186,10 +424,25 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/image" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/resources/backup.header" />
+      <recent name="$PROJECT_DIR$/resources/body" />
+      <recent name="$PROJECT_DIR$/resources/animation" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/image" />
+      <recent name="$PROJECT_DIR$/resources/backup" />
+      <recent name="$PROJECT_DIR$/resources/backup/body" />
+      <recent name="$PROJECT_DIR$/resources/backup.header/animation" />
+      <recent name="$PROJECT_DIR$/resources/backup/body/animation" />
+      <recent name="$PROJECT_DIR$/resources/header/animation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -401,7 +654,7 @@
     </configuration>
     <configuration default="false" name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.wlf2789.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.wlf2789.MainWindow" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -410,7 +663,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="POVD Designer" />
+      <module name="POV Display Configurator" />
       <envs />
       <method />
     </configuration>
@@ -444,75 +697,54 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="26" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272921" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2318612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23667377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3242424" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11893939" sideWeight="0.49555272" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14034152" sideWeight="0.49555272" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1905016" sideWeight="0.5044473" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Notes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272921" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31340206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1590909" sideWeight="0.49555272" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1905016" sideWeight="0.5044473" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../Backup/Main.java</url>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="Main.instance().data" language="JAVA" custom="com.wlf2789.Main" />
@@ -524,220 +756,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2912">
-          <caret line="208" column="0" lean-forward="true" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="195" column="61" lean-forward="false" selection-start-line="195" selection-start-column="61" selection-end-line="195" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1498">
-          <caret line="107" column="99" lean-forward="false" selection-start-line="107" selection-start-column="99" selection-end-line="107" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2436">
-          <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/notatki" />
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="130" column="92" lean-forward="true" selection-start-line="130" selection-start-column="92" selection-end-line="130" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="146" column="15" lean-forward="false" selection-start-line="146" selection-start-column="15" selection-end-line="146" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="72" column="115" lean-forward="false" selection-start-line="72" selection-start-column="115" selection-end-line="72" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/animation.h" />
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JButton.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/DANE/Coding/Code/Java/Bowman/src/GUI/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="93" column="16" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="93" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/AbstractButton.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/DANE/Coding/Code/Java/Bowman/src/engine/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Singleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Output.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/animation.h" />
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/MainBackup.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/notatki" />
-    <entry file="file://$PROJECT_DIR$/image/new.svg" />
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Output.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/image.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image/data.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/MouseEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="129" column="17" lean-forward="false" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21098">
-          <caret line="1678" column="15" lean-forward="false" selection-start-line="1678" selection-start-column="15" selection-end-line="1678" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/body-backup" />
+    <entry file="file://$PROJECT_DIR$/Templates/about.properties" />
+    <entry file="file://$PROJECT_DIR$/resources/about" />
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/wlf.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/description.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="73" />
+          <caret line="0" column="58" lean-forward="false" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/POVD_Designer.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/kotlinc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -752,64 +787,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/POVD Designer.iml">
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/project-template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/a" />
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/jdk/internal/util/xml/impl/Pair.class">
+    <entry file="file://$PROJECT_DIR$/POV Display Configurator.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="70">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Idea/POVD Designer/src/com/wlf2789/Main.java" />
-    <entry file="file://$PROJECT_DIR$/../../../BACKUP/POVD Designer/test/animation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="94" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="361" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/test.h" />
-    <entry file="file://$USER_HOME$/Downloads/UnicodeBrowser/README" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="2" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/body/start" />
+    <entry file="file://$PROJECT_DIR$/resources/header/animation/video" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/about.html" />
+    <entry file="file://$PROJECT_DIR$/resources/header/template" />
+    <entry file="file://$PROJECT_DIR$/resources/header/animation/text" />
+    <entry file="file://$PROJECT_DIR$/resources/body/animation/text" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/header/animation/video" />
+    <entry file="file://$PROJECT_DIR$/resources/body/animation/image" />
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/Base64.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/body/end" />
+    <entry file="file://$PROJECT_DIR$/resources/body/animation/video" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/body/animation/video" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/body/start" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/header/template" />
     <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/RepaintManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/backup/body/end" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/CODE" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/body/animation/image" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/body/animation/text" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/header/animation/image" />
+    <entry file="file://$PROJECT_DIR$/resources/backup/header/animation/text" />
+    <entry file="file://$PROJECT_DIR$/resources/animation/a" />
+    <entry file="file://$PROJECT_DIR$/resources/animation/image/setup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java">
+    <entry file="file://$PROJECT_DIR$/resources/animation/image/code">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="196" column="57" lean-forward="false" selection-start-line="196" selection-start-column="57" selection-end-line="196" selection-end-column="57" />
+        <state relative-caret-position="14">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/code">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/Main.java" />
+    <entry file="file://$PROJECT_DIR$/resources/animation/text/setup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="139" column="40" lean-forward="false" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/animation/text/code">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="236" column="75" lean-forward="true" selection-start-line="236" selection-start-column="75" selection-end-line="237" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/DesignerWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/MainWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/DataHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="159" column="11" lean-forward="true" selection-start-line="159" selection-start-column="11" selection-end-line="159" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wlf2789/DesignerWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="216" column="51" lean-forward="true" selection-start-line="216" selection-start-column="51" selection-end-line="216" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -820,11 +969,11 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
-          <last-edited>POVD Designer</last-edited>
+          <last-edited>POV Display Configurator:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -883,18 +1032,28 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>POVD Designer</last-edited>
+          <last-edited>POV Display Configurator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

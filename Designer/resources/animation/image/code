@@ -1,0 +1,2 @@
+  Display::SetLEDs(0, image[step][0]);
+  Display::SetLEDs(1, image[step][1]);

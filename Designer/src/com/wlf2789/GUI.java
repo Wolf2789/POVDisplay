@@ -163,7 +163,7 @@ public class GUI extends JFrame {
         output = new Output(this);
 
         /*
-        Main.loadData(new File("/home/wlf/Coding/INZYNIERKA/POVDisplay/Arduino/animation.h"));
+        Main.loadData(new File("/home/wlf/Coding/INZYNIERKA/POVDisplay/Arduino/start.animation.h"));
         updateFramesList();
         lFrames.setSelectedIndex(0);
         */
