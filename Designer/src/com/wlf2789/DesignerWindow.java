@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class DesignerWindow extends JFrame {
@@ -173,8 +172,7 @@ public class DesignerWindow extends JFrame {
 
             /** CONTROLS
              Left mouse - set
-             Right mouse - remove\n
-             Right mouse + ctrl - remove row
+             Right mouse - remove
              Middle mouse - move around
              Mouse wheel - zoom
              Mouse wheel + ctrl - faster zoom

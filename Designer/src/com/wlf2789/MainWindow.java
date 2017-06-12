@@ -1,13 +1,10 @@
 package com.wlf2789;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.MouseEvent;
 import java.io.*;
-import java.net.URL;
 import java.util.Arrays;
-import java.util.Enumeration;
 import java.util.LinkedList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -17,8 +14,8 @@ public class MainWindow extends JFrame {
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception ex) {
-            System.out.printf("Error: %s\n", ex.getMessage());
+        } catch (Exception e) {
+            System.out.printf("Error (main): %s\n", e.getMessage());
         }
         new MainWindow();
     }
@@ -66,6 +63,7 @@ public class MainWindow extends JFrame {
                 uiExport.setToolTipText(null);
 
                 // hide configuration panels
+                designerWindow.setVisible(false);
                 uiText.setVisible(false);
                 uiOpenDesigner.setVisible(false);
 
@@ -73,6 +71,7 @@ public class MainWindow extends JFrame {
                 switch (uiAnimationChooser.getSelectedIndex()) {
                     case 0:
                         uiText.setVisible(true);
+                        DataHelper.AnimationData = uiTextToScroll.getText();
                         break;
                     case 1:
                         uiOpenDesigner.setVisible(true);
@@ -101,6 +100,7 @@ public class MainWindow extends JFrame {
                     // determine animation type
                     uiAnimationChooser.setSelectedIndex( (arduino.indexOf("#define textToDisplay") > -1) ? 0 : 1 );
                     if (uiAnimationChooser.getSelectedIndex() == 0) {
+                        // #### load scrolling text animation
                         // get animation outline
                         Matcher m = Pattern.compile("#define\\sANIMATION_OUTLINE\\s(.*)\\n").matcher(arduino);
                         while (m.find())
@@ -108,12 +108,13 @@ public class MainWindow extends JFrame {
                         // get animation speed
                         m = Pattern.compile("#define\\sANIMATION_SPEED\\s(.*)\\n").matcher(arduino);
                         while (m.find())
-                            uiAnimationSpeed.setValue(Integer.parseInt(m.group(1)));
+                            uiAnimationSpeed.setValue(Integer.parseInt(m.group(1))/100);
                         // get animation text
-                        m = Pattern.compile("#define\\stextToDisplay\\s(.*)\\n").matcher(arduino);
+                        m = Pattern.compile("#define\\stextToDisplay\\s\"(.*)\"\\n").matcher(arduino);
                         while (m.find())
                             uiTextToScroll.setText(m.group(1));
                     } else {
+                        // #### load image
                         // get image steps
                         Matcher m = Pattern.compile("#define\\sMAX_STEPS\\s(.*)\\n").matcher(arduino);
                         while (m.find())
@@ -121,7 +122,7 @@ public class MainWindow extends JFrame {
                         DataHelper.importFromArduino(arduino);
                     }
                 } catch (Exception e) {
-                    System.out.printf("Error: %s\n", e.getMessage());
+                    System.out.printf("Error (import): %s\n", e.getMessage());
                 }
             }
         });
@@ -143,14 +144,9 @@ public class MainWindow extends JFrame {
                 try {
                     writer = new BufferedWriter(new FileWriter(fileChooser.getSelectedFile()));
                     writer.write(DataHelper.exportToArduino());
+                    writer.close();
                 } catch (Exception e) {
-                    System.out.printf("Error: %s\n", e.getMessage());
-                } finally {
-                    try {
-                        writer.close();
-                    } catch (Exception e) {
-                        System.out.printf("Error: %s\n", e.getMessage());
-                    }
+                    System.out.printf("Error (export): %s\n", e.getMessage());
                 }
             }
         });
@@ -160,20 +156,17 @@ public class MainWindow extends JFrame {
         });
 
         // set default values
-        uiAbout.setText( DataHelper.loadString("about.html") );
         uiAnimationSpeed.setValue(1);
+        uiAbout.setText(
+                DataHelper.loadString("about")
+                        .replace("{INFO.PNG}",
+                                this.getClass().getClassLoader().getResource("resources/image/info.png").toString()
+                        )
+        );
 
         pack();
         setVisible(true);
 
         designerWindow = new DesignerWindow(this);
-
-        //*
-        try {
-            new ImageIcon( ImageIO.read(this.getClass().getClassLoader().getResourceAsStream("image/info.png")) );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //*/
     }
 }

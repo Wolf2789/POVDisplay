@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="POV Display Configurator:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/POV_Display_Configurator_jar</output-path>
+  <artifact type="jar" build-on-make="true" name="POV Display Configurator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/POV_Display_Configurator</output-path>
     <root id="archive" name="POV Display Configurator.jar">
       <element id="module-output" name="POV Display Configurator" />
     </root>

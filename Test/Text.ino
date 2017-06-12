@@ -184,7 +184,7 @@ byte FONT_MAPPING[] = {
 
 #define MAX_STEPS 130
 #define ANIMATION_SPEED 200
-#define ANIMATION_OUTLINE FALSE
+#define ANIMATION_OUTLINE TRUE
 #define textToDisplay "Hello World! sadf"
 byte textLen = sizeof(textToDisplay) - 1;
 int textLenWidth = textLen * 6;

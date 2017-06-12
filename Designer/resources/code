@@ -1,13 +1,6 @@
 #include <Wire.h>
 
-int IR = 0;
-byte IR_countdown = 0;
-#define IR_THRESHOLD 900
-#define IR_PIN_1 A2
-bool doReset = true;
-byte currentStep = 0;
 enum LedState { OFF = 0, ON = 1 };
-
 class Display {
   private:
     static byte expander[];
@@ -20,7 +13,6 @@ class Display {
 };
 
 byte Display::expander[2] = { 0x21, 0x38 };
-byte Display::remap[][8] = { {3,2,1,0,7,6,5,4}, {1,2,3,7,6,5,4,0} };
 byte Display::LEDs[] = { 0, 0 };
 
 void Display::SetLEDs(byte expander, byte LEDs) {
@@ -41,6 +33,13 @@ void Display::Update() {
     Wire.endTransmission();
   }
 }
+
+int IR = 0;
+byte IR_countdown = 0;
+#define IR_THRESHOLD 900
+#define IR_PIN_1 A2
+bool doReset = true;
+byte currentStep = 0;
 
 void setup() {
   Wire.begin();
