@@ -4,7 +4,6 @@ enum LedState { OFF = 0, ON = 1 };
 class Display {
   private:
     static byte expander[];
-    static byte remap[][8];
     static byte LEDs[];
   public:
     static void Update();

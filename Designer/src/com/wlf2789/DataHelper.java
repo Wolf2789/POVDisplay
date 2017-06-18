@@ -105,7 +105,7 @@ public class DataHelper {
                 return loadString("animation/text/setup")
                         .replace("{ANIMATION TEXT}", AnimationData.toString())
                         .replace("{ANIMATION SPEED}", ""+(AnimationSpeed * 100))
-                        .replace("{ANIMATION OUTLINE}", (AnimationOutline ? "TRUE" : "FALSE"));
+                        .replace("{ANIMATION OUTLINE}", (AnimationOutline ? "true" : "false"));
             case 1: {
                 LinkedList<String> list = (LinkedList)AnimationData;
                 String data = "";

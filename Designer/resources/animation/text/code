@@ -1,4 +1,4 @@
-  iText = (step - (MAX_STEPS + textLenWidth - position));
+  iText = (currentStep - (MAX_STEPS + textLenWidth - position));
   iChar = iText % 6;
   iText /= 6;
 

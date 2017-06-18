@@ -140,9 +140,8 @@ public class MainWindow extends JFrame {
             if (fileChooser.showSaveDialog(MainWindow.this) == JFileChooser.APPROVE_OPTION) {
                 if (uiAnimationChooser.getSelectedIndex() == 0)
                     DataHelper.AnimationData = uiTextToScroll.getText();
-                BufferedWriter writer = null;
                 try {
-                    writer = new BufferedWriter(new FileWriter(fileChooser.getSelectedFile()));
+                    BufferedWriter writer = new BufferedWriter(new FileWriter(fileChooser.getSelectedFile()));
                     writer.write(DataHelper.exportToArduino());
                     writer.close();
                 } catch (Exception e) {
